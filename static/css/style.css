@@ -8,7 +8,7 @@ header {
   width: 85%;
   display: flex;
   align-items: center;
-  margin: auto;
+  margin: 2% auto 0 auto;
 }
 
 .left-col,
@@ -68,4 +68,77 @@ span:hover {
   padding: 1rem;
   border: 1px solid #ffd55e;
   color: grey;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    margin: 5% auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    margin-top: 100px;
+  }
+  img {
+    width: 400px;
+    height: 400px;
+  }
+  .right-col h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .right-col {
+    margin-left: 30px;
+  }
+
+  .right-col textarea,
+  span,
+  .output {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .left-col,
+  .right-col {
+    flex-basis: 100%;
+    width: 90%;
+  }
+
+  .right-col h1 {
+    font-size: 2rem;
+  }
+
+  .right-col {
+    margin-left: 0;
+  }
+
+  .left-col img {
+    width: 230px;
+    height: 230px;
+    /* margin: 30px 50px 30px 100px; */
+  }
+
+  span {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header {
+    margin-top: -35px;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
 }
